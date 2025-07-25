@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
 function PracForm() {
 
@@ -10,11 +10,11 @@ function PracForm() {
   });
 
   const handleChange = (event) => {
-    const {name,value} = event.target;
+    const { name, value } = event.target;
 
     setDetails((prev) => {
-      return {...prev, [name]: value}
-    });    
+      return { ...prev, [name]: value }
+    });
   };
 
   //console.log(details);
